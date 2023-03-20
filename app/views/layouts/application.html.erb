@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>4/2 ハママパスタ会</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <title>4/2 ハママパスタ会</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
 
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .menu-container {
+        height: 100%;
+        width: 100%;
+        background-color: transparent; /* 背景色を透明にする */
+      }
+      main {
+        margin-top: 0; /* main要素の上マージンを0にする */
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+       header {
+        background-color: black; /* header要素の背景色を黒色にする */
+        color: white; /* header要素の文字色を白色にする */
+        text-align: center;
+       }
+      footer {
+        margin-top: auto; /* footer要素をページの下部に固定する */
+        text-align: center;
+      }
+    </style>
 
-<body>
-  <%= yield %>
-</body>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+
+ <body>
+    <header>
+  </header>
+
+  <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <p>&copy; <%= Time.now.year %> Hama Pasta Party. All rights reserved.</p>
+    </footer>
+ </body>
 </html>
+
+

@@ -1,0 +1,97 @@
+/* ヘッダー */
+header {
+  background-color: black;
+  color: white;
+}
+
+/* フッター */
+footer {
+  background-color: black;
+  color: white;
+}
+
+/* オーダーページ */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8B4513; /* 茶色の背景色 */
+}
+
+.menu-heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Pacifico', cursive; /* Pacificoフォントの使用 */
+  color: white; /* 白色の文字色 */
+}
+
+.menu-item-heading {
+  font-family: 'Pacifico', cursive; /* Pacificoフォントの使用 */
+  color: white; /* 白色の文字色 */
+  position: relative; /* 相対位置指定 */
+  display: inline-block; /* インラインブロック要素に変更 */
+}
+
+.menu-item-heading:after {
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  right: -20px; /* 右に20pxの余白を作る */
+}
+
+.menu-item {
+  flex-basis: 30%;
+  color: white; /* 白色の文字色 */
+  font-family: 'Pacifico', cursive; /* Pacificoフォントの使用 */
+}
+
+.menu-item-list {
+  margin-left: 0; /* デフォルトのリストスタイルを削除 */
+  list-style-type: none; /* リストスタイルを削除 */
+  padding-left: 0; /* 左余白を削除 */
+}
+
+.menu-item-button {
+  background-color: white;
+  color: #8B4513; /* 茶色の文字色 */
+  padding: 3px 7px;
+  text-decoration: none;
+  border: none;
+  margin-left: 10px;
+  border-radius: 10px; /* 丸みをつける */
+}
+
+.admin-link {
+  background-color: white;
+  color: #8B4513; /* 茶色の文字色 */
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+/* Adminボタン */
+
+
+.btn-admin { 
+  border-radius: 10px; /* 丸みをつける */
+  border: none;
+  background-color: #8B4513; /* 茶色の背景色 */
+  color: white;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s; /* マウスオーバー時のアニメーション */
+  margin-bottom: 5px;
+  position: fixed; /* 要素を固定配置にする */
+  bottom: 10px; /* 下部の余白を指定 */
+  right: 10px; /* 右側の余白を指定 */
+  
+  
+}
+
+.btn-admin:hover {
+  background-color: #CD853F; /* マウスオーバー時の背景色 */
+  color: white;
+  text-decoration: none;
+}
