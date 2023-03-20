@@ -62,6 +62,12 @@ footer {
   border-radius: 10px; /* 丸みをつける */
 }
 
+.menu-item-button:hover {
+  background-color: #CD853F; /* マウスオーバー時の背景色 */
+  color: white;
+  text-decoration: none;
+}
+
 .admin-link {
   background-color: white;
   color: #8B4513; /* 茶色の文字色 */
@@ -71,7 +77,6 @@ footer {
 }
 
 /* Adminボタン */
-
 
 .btn-admin { 
   border-radius: 10px; /* 丸みをつける */
