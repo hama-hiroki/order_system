@@ -1,3 +1,4 @@
+/* PC用のスタイル */
 /* ヘッダー */
 header {
   background-color: black;
@@ -89,4 +90,52 @@ footer {
   background-color: #CD853F; /* マウスオーバー時の背景色 */
   color: white;
   text-decoration: none;
+}
+
+
+/* スマートフォン用のスタイル */
+
+/* iPhone 13 mini 用のスタイル */
+@media screen and (max-width: 360px) {
+  /* ここに iPhone 13 mini 用のスタイルを記述 */
+  body {
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* 余白を削除 */
+  }
+}
+
+/* iPhone 13 / iPhone 13 Pro 用のスタイル */
+@media screen and (min-width: 361px) and (max-width: 390px) {
+  /* ここに iPhone 13 / iPhone 13 Pro 用のスタイルを記述 */
+  body {
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* 余白を削除 */
+  }
+}
+
+/* iPhone 13 Pro Max 用のスタイル */
+@media screen and (min-width: 391px) and (max-width: 428px) {
+  /* ここに iPhone 13 Pro Max 用のスタイルを記述 */
+  body {
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* 余白を削除 */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* ここにスマートフォン用のスタイルを記述 */
+  body {
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* 余白を削除 */
+  }
+  
+  header, footer {
+    padding-left: 10px; /* 左側の余白を追加 */
+    padding-right: 10px; /* 右側の余白を追加 */
+  }
+  
+  .menu-container {
+    padding-left: 10px; /* 左側の余白を追加 */
+    padding-right: 10px; /* 右側の余白を追加 */
+  }
 }
