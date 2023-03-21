@@ -8,6 +8,7 @@ header {
 footer {
   background-color: black;
   color: white;
+  padding-top: 10px;
 }
 
 /* オーダーページ */
@@ -33,12 +34,6 @@ footer {
   display: inline-block; /* インラインブロック要素に変更 */
 }
 
-.menu-item-heading:after {
-  font-size: 36px;
-  position: absolute;
-  top: 0;
-  right: -20px; /* 右に20pxの余白を作る */
-}
 
 .menu-item {
   flex-basis: 30%;
@@ -88,11 +83,6 @@ footer {
   font-size: 16px;
   transition: all 0.3s; /* マウスオーバー時のアニメーション */
   margin-bottom: 5px;
-  position: fixed; /* 要素を固定配置にする */
-  bottom: 10px; /* 下部の余白を指定 */
-  right: 10px; /* 右側の余白を指定 */
-  
-  
 }
 
 .btn-admin:hover {
