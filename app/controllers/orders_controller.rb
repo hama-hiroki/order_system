@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_menu_item, only: [:new, :create]
+  before_action :set_menu_item, only: [:new, :create, :confirm]
 
   def new
     @order = Order.new
@@ -21,12 +21,18 @@ class OrdersController < ApplicationController
     end
   end
 
+  def confirm
+    @order = Order.new(order_params)
+    @order.menu_item_id = @menu_item.id
+    @subtotal = @menu_item.price * @order.quantity
+  end
+
   private
   def set_menu_item
     @menu_item = MenuItem.find(params[:menu_item_id])
   end
 
   def order_params
-    params.require(:order).permit(:quantity)
+    params.require(:order).permit(:quantity, :menu_item_id)
   end
 end
